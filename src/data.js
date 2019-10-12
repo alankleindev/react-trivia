@@ -93,7 +93,7 @@ var data = [
       {
         points: 200,
         question: "What are the colors of the olympic rings?",
-        answer: "<img src='assets/img/olympic_rings.png'/>"
+        answer: "Red, Green, Blue, Black, and Yellow"
       },
       {
         points: 300,

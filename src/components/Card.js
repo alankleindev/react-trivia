@@ -1,5 +1,6 @@
 import React from "react";
 import * as audio from "./audio";
+import reactLogo from "../assets/img/react.svg";
 
 class Card extends React.Component {
   constructor(props) {
@@ -43,7 +44,7 @@ class Card extends React.Component {
         WebkitTransform: "translate3d(" + this.props.left + "px," + this.props.top + "px,0)"
       },
       front = this.state.completed ? (
-        <img src="assets/img/react.svg" />
+        <img src={reactLogo} />
       ) : (
         <span className="points">{this.props.question.points}</span>
       ),
@@ -66,7 +67,7 @@ class Card extends React.Component {
           <div className="front">{front}</div>
           <div className="back">
             <span dangerouslySetInnerHTML={this.getLabelBack()} />
-            <img src="assets/img/react.svg" />
+            <img src={reactLogo} alt="" />
           </div>
         </div>
       </div>

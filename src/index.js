@@ -4,6 +4,7 @@ import Card from "./components/Card";
 import Headers from "./components/Headers";
 import request from "./components/request";
 import data from "./data";
+import "./assets/css/styles.css";
 
 class App extends React.Component {
   constructor(props) {
