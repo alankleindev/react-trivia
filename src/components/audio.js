@@ -1,6 +1,6 @@
 import cardFlip from "../assets/audio/card-flip.mp3";
 import cardFlipBack from "../assets/audio/card-flip-back.mp3";
-import countDown from "../assets/audio/countdown.wav";
+import countDown from "../assets/audio/countdown.mp3";
 
 let sounds = {};
 sounds.flip = new Audio(cardFlip);
