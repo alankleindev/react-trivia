@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Card from "./components/Card";
+import CardContainer from "./containers/CardContainer";
 import Headers from "./components/Headers";
 import request from "./components/request";
 import data from "./data";
 import "./assets/css/styles.css";
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import mainReducer from './reducers/mainReducer';
 
 class App extends React.Component {
   constructor(props) {
@@ -34,23 +37,6 @@ class App extends React.Component {
     this.setState({ data: data, rows: rows, cols: data.length });
   }
 
-  /*
-    // Traditional XHR implementation. Getting questions from data.json using XHR. Will run into cross origin issues in some browsers
-    // if loading index.html from the local file system (using the file:// protocol) -->
-    componentDidMount() {
-        window.addEventListener('resize', this.handleResize.bind(this));
-        request({url: "data.json"}).then(result => {
-            let data = JSON.parse(result),
-                rows = 0;
-            data.forEach(category => {
-                if (category.questions.length > rows) {
-                    rows = category.questions.length;
-                }
-            });
-            this.setState({data: data, rows: rows, cols: data.length});
-        });
-    }
-    */
 
   componentWillUnmount() {
     window.removeEventListener("resize", this.handleResize);
@@ -66,7 +52,7 @@ class App extends React.Component {
       let left = categoryIndex * cardWidth;
       category.questions.forEach((question, questionIndex) => {
         cards.push(
-          <Card
+          <CardContainer
             left={left}
             top={questionIndex * cardHeight + headerHeight}
             height={cardHeight}
@@ -86,4 +72,6 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+let store = createStore(mainReducer);
+
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('app'));
