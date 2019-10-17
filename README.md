@@ -21,3 +21,7 @@ Web Browser
 - **Alan Klein**
 - **Samhita Noone**
 - **Khadijah Parks**
+
+## Credits
+
+- Inspired By: Christophe Coenraets - https://github.com/ccoenraets/react-trivia
