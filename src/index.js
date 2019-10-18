@@ -4,7 +4,10 @@ import Card from "./components/Card";
 import Headers from "./components/Headers";
 import request from "./components/request";
 import data from "./data";
+
+import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 import "./assets/css/styles.css";
+import Home from "./Home";
 
 class App extends React.Component {
   constructor(props) {
@@ -68,4 +71,13 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+const routing = (
+  <Router>
+    <div>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/react-trivia' component={App} />
+    </div>
+  </Router>
+);
+
+ReactDOM.render(routing, document.getElementById("app"));
