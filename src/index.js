@@ -5,10 +5,13 @@ import ScoreContainer from "./containers/ScoreContainer.js";
 import Headers from "./components/Headers";
 import request from "./components/request";
 import data from "./data";
+
+import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 import "./assets/css/styles.css";
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import mainReducer from './reducers/mainReducer';
+import Home from "./Home";
 
 class App extends React.Component {
   constructor(props) {
@@ -73,6 +76,17 @@ class App extends React.Component {
   }
 }
 
+const routing = (
+  <Router>
+    <div>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/react-trivia' component={App} />
+    </div>
+  </Router>
+);
+
 let store = createStore(mainReducer);
 
-ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('app'));
+ReactDOM.render(<Provider store={store}><routing /></Provider>, document.getElementById('app'));
+
+
