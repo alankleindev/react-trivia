@@ -87,6 +87,6 @@ const routing = (
 
 let store = createStore(mainReducer);
 
-ReactDOM.render(<Provider store={store}><routing /></Provider>, document.getElementById('app'));
+ReactDOM.render(<Provider store={store}>{routing} </Provider>, document.getElementById('app'));
 
 
