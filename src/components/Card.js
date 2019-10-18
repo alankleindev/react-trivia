@@ -29,30 +29,30 @@ class Card extends React.Component {
   }
 
   checkAnswer(option) {
-    if(option == this.props.question.answer) {
-      console.log('got the answer right');
-      this.props.onFinish(this.props.question.points)
+    if (option == this.props.question.answer) {
+      console.log("got the answer right");
+      this.props.onFinish(this.props.question.points);
     } else {
-      console.log('got the answer wrong');
-
+      console.log("got the answer wrong");
     }
   }
 
   getLabelBack() {
-    if (this.state.view==="question") {
-      let {options, question} = this.props.question;
-      
-      return (
-        <div>
-          {question}
-          {options.map(option => <button onClick={() => this.checkAnswer(option)}> {option} </button>)}
-        </div>
-      )
+    if (this.state.view === "question") {
+      let { options, question } = this.props.question;
 
+      return (
+        <div className='Card-QA'>
+          <p>{question}</p>
+          {options.map(option => (
+            <button onClick={() => this.checkAnswer(option)}> {option} </button>
+          ))}
+        </div>
+      );
     } else {
-      return this.props.question.answer
+      return this.props.question.answer;
     }
-  };
+  }
 
   // getLabelBack() {
   //   return { __html: this.state.view === "question" ? this.props.question.question : this.props.question.answer };
@@ -68,13 +68,15 @@ class Card extends React.Component {
     let style = {
         width: this.props.width + "px",
         height: this.props.height + "px",
-        transform: "translate3d(" + this.props.left + "px," + this.props.top + "px,0)",
-        WebkitTransform: "translate3d(" + this.props.left + "px," + this.props.top + "px,0)"
+        transform:
+          "translate3d(" + this.props.left + "px," + this.props.top + "px,0)",
+        WebkitTransform:
+          "translate3d(" + this.props.left + "px," + this.props.top + "px,0)"
       },
       front = this.state.completed ? (
         <img src={reactLogo} />
       ) : (
-        <span className="points">{this.props.question.points}</span>
+        <span className='points'>{this.props.question.points}</span>
       ),
       className = "flipper";
 
@@ -91,11 +93,11 @@ class Card extends React.Component {
         onClick={this.clickHandler.bind(this)}
         onTransitionEnd={this.transitionEndHandler.bind(this)}
       >
-        <div className="card">
-          <div className="front">{front}</div>
-          <div className="back">
+        <div className='card'>
+          <div className='front'>{front}</div>
+          <div className='back'>
             {this.getLabelBack()}
-            <img src={reactLogo} alt="" />
+            <img src={reactLogo} alt='' />
           </div>
         </div>
       </div>

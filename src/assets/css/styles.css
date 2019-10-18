@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Cuprum|Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cuprum|Iceberg|Montserrat&display=swap");
 
 body {
   padding: 0;
@@ -18,12 +18,13 @@ p {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 28px;
+
   /*padding-top: 16px;*/
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  height: 60px;
+  height: 50px;
 }
 
 .headers > .header {
@@ -132,6 +133,28 @@ p {
   font-size: 36px;
   font-weight: 300;
   padding: 0 50px;
+}
+.Card-QA p {
+  margin-bottom: 20px;
+}
+.Card-QA button {
+  display: flex;
+  margin: 0 auto;
+  background: none;
+  font-size: 2.2rem;
+  color: #62dbfa;
+  border: none;
+}
+.Card-QA button:hover {
+  color: #fff;
+}
+
+#Score {
+  font-family: "Iceberg", cursive;
+  font-size: 1.3rem;
+  position: absolute;
+  color: #fff;
+  margin-left: 10px;
 }
 
 .flipper.done .front > .points {
