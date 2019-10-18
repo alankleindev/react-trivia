@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./assets/css/styles.css";
+import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 
 class Home extends Component {
   constructor(props) {
@@ -13,7 +14,9 @@ class Home extends Component {
         <h1 className='Home-title'>
           Welcome to <span className='Home-span'>React Trivia</span>
         </h1>
-        <button className='Home-btn'>Enter to Play</button>
+        <Link to='/react-trivia'>
+          <button className='Home-btn'>Enter to Play</button>
+        </Link>
       </div>
     );
   }

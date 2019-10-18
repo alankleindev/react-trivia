@@ -71,4 +71,13 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<Home />, document.getElementById("app"));
+const routing = (
+  <Router>
+    <div>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/react-trivia' component={App} />
+    </div>
+  </Router>
+);
+
+ReactDOM.render(routing, document.getElementById("app"));
