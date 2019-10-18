@@ -4,49 +4,45 @@ var data = [
     questions: [
       {
         points: 100,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "What part of your application does React focus on?",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 200,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 300,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 400,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       }
@@ -57,49 +53,45 @@ var data = [
     questions: [
       {
         points: 100,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 200,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 300,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 400,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       }
@@ -110,49 +102,45 @@ var data = [
     questions: [
       {
         points: 100,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 200,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 300,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 400,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       }
@@ -163,54 +151,50 @@ var data = [
     questions: [
       {
         points: 100,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 200,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 300,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       },
       {
         points: 400,
-        question:
-          "<p>What part of your application does React focus on?</p>",
+        question: "<p>What part of your application does React focus on?</p>",
         options: [
-        "A. The Model",
-        "B. The View",
-        "C. The Controller",
-        "D. All of the Above"
+          "A. The Model",
+          "B. The View",
+          "C. The Controller",
+          "D. All of the Above"
         ],
         answer: "B. The View"
       }
     ]
   }
-  ];
+];
 
 export default data;
