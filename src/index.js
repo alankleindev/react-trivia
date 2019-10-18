@@ -1,10 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Card from "./components/Card";
+import CardContainer from "./containers/CardContainer.js";
+import ScoreContainer from "./containers/ScoreContainer.js";
 import Headers from "./components/Headers";
 import request from "./components/request";
 import data from "./data";
 import "./assets/css/styles.css";
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import mainReducer from './reducers/mainReducer';
 
 class App extends React.Component {
   constructor(props) {
@@ -48,7 +52,7 @@ class App extends React.Component {
       let left = categoryIndex * cardWidth;
       category.questions.forEach((question, questionIndex) => {
         cards.push(
-          <Card
+          <CardContainer
             left={left}
             top={questionIndex * cardHeight + headerHeight}
             height={cardHeight}
@@ -61,6 +65,7 @@ class App extends React.Component {
     });
     return (
       <div>
+        <ScoreContainer/>
         <Headers data={this.state.data} headerWidth={cardWidth} />
         {cards}
       </div>
@@ -68,4 +73,6 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+let store = createStore(mainReducer);
+
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('app'));

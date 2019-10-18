@@ -6,6 +6,8 @@ class Card extends React.Component {
   constructor(props) {
     super(props);
     this.state = { view: "points", completed: false };
+
+    this.checkAnswer = this.checkAnswer.bind(this);
   }
 
   clickHandler(event) {
@@ -26,9 +28,35 @@ class Card extends React.Component {
     }
   }
 
-  getLabelBack() {
-    return { __html: this.state.view === "question" ? this.props.question.question : this.props.question.answer };
+  checkAnswer(option) {
+    if(option == this.props.question.answer) {
+      console.log('got the answer right');
+      this.props.onFinish(this.props.question.points)
+    } else {
+      console.log('got the answer wrong');
+
+    }
   }
+
+  getLabelBack() {
+    if (this.state.view==="question") {
+      let {options, question} = this.props.question;
+      
+      return (
+        <div>
+          {question}
+          {options.map(option => <button onClick={() => this.checkAnswer(option)}> {option} </button>)}
+        </div>
+      )
+
+    } else {
+      return this.props.question.answer
+    }
+  };
+
+  // getLabelBack() {
+  //   return { __html: this.state.view === "question" ? this.props.question.question : this.props.question.answer };
+  // }
 
   transitionEndHandler(event) {
     if (event.propertyName === "width") {
@@ -66,7 +94,7 @@ class Card extends React.Component {
         <div className="card">
           <div className="front">{front}</div>
           <div className="back">
-            <span dangerouslySetInnerHTML={this.getLabelBack()} />
+            {this.getLabelBack()}
             <img src={reactLogo} alt="" />
           </div>
         </div>
