@@ -44,8 +44,8 @@ class Card extends React.Component {
       return (
         <div className='Card-QA'>
           <p>{question}</p>
-          {options.map(option => (
-            <button onClick={() => this.checkAnswer(option)}> {option} </button>
+          {options.map((option, index) => (
+            <button key={index} onClick={() => this.checkAnswer(option)}> {option} </button>
           ))}
         </div>
       );
