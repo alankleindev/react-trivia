@@ -3,10 +3,9 @@ import ReactDOM from "react-dom";
 import CardContainer from "./containers/CardContainer.js";
 import ScoreContainer from "./containers/ScoreContainer.js";
 import Headers from "./components/Headers";
-import request from "./components/request";
 import data from "./data";
 
-import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import { Route, BrowserRouter as Router } from "react-router-dom";
 import "./assets/css/styles.css";
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';

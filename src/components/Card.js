@@ -29,7 +29,7 @@ class Card extends React.Component {
   }
 
   checkAnswer(option) {
-    if (option == this.props.question.answer) {
+    if (option === this.props.question.answer) {
       console.log("got the answer right");
       this.props.onFinish(this.props.question.points);
     } else {
@@ -74,7 +74,7 @@ class Card extends React.Component {
           "translate3d(" + this.props.left + "px," + this.props.top + "px,0)"
       },
       front = this.state.completed ? (
-        <img src={reactLogo} />
+        <img src={reactLogo} alt="" />
       ) : (
         <span className='points'>{this.props.question.points}</span>
       ),
